@@ -1,0 +1,507 @@
+/* 
+ *@Description: Plugins style-sheet for BlueWindLab Ticker.
+ *@Created By: Mahbub Alam Khan
+ *@URI: http://www.bluewindlab.net
+ */
+.bwl_breaking_news_ticker_sc,
+.bwl_breaking_news_ticker {
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    /*width: 100%;*/
+    height: 250px;
+    text-align: left;
+}
+
+div.bnm_dn,
+span.bnm_dn {
+    display: none;
+}
+
+.bwl_breaking_news_ticker_sc {
+    height: 32px;
+}
+
+    .bwl_breaking_news_ticker_sc li {
+        list-style-type: none;
+    }
+
+.bwl_breaking_news_ticker li {
+    height: 250px;
+    background: transparent;
+    list-style-type: none;
+    margin: 6px 0;
+    line-height: 1.5em;
+    padding: 0 5px;
+    /*overflow: hidden;*/
+}
+
+
+    .bwl_breaking_news_ticker li a.bnm-post-title {
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .bwl_breaking_news_ticker li p.bnm-post-details {
+        padding: 0;
+        margin: 0;
+        clear: both;
+    }
+
+        .bwl_breaking_news_ticker li p.bnm-post-details a.read-more-link {
+            float: right;
+        }
+
+    .bwl_breaking_news_ticker li em.bnm-post-date {
+        clear: both;
+        padding: 0;
+        margin: 11px 0 0 0;
+        display: block;
+    }
+
+.no-border {
+    border-bottom: none !important;
+}
+
+.bnm-align-left {
+    text-align: left;
+    line-height: 32px;
+}
+
+.bnm-align-center {
+    text-align: center;
+}
+
+.bnm-align-right {
+    text-align: right;
+}
+
+.bnm-fr {
+    float: right;
+}
+
+.bnm-clearfix {
+    *zoom: 1;
+}
+
+    .bnm-clearfix:before,
+    .bnm-clearfix:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+
+    .bnm-clearfix:after {
+        clear: both;
+    }
+
+.bnm-separator {
+    display: inilne-block;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*------------------------------ Sticky Header ---------------------------------*/
+
+/* Make Header Sticky */
+
+#bwl_breaking_news_header_container {
+    background: #FFFFFF;
+    color: #2C2C2C;
+    border-bottom: 3px solid #f0f400;
+    width: 100%;
+    height: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+    -o-box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+}
+
+/*------------------------------ Add A Show/Hide Button(Introduced Version 1.0.4) ---------------------------------*/
+.bwl_breaking_news_header_ctrl_btn {
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    right: 18px;
+    top: 32px;
+    background: #FFFFFF;
+    color: #2C2C2C;
+    display: inline-block;
+    z-index: 2001;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-border-radius: 0px 0px 2px 2px;
+    -moz-border-radius: 0px 0px 2px 2px;
+    -o-border-radius: 0px 0px 2px 2px;
+    border-radius: 0px 0px 2px 2px;
+}
+
+
+
+#bwl_breaking_news_header_container #header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 32px;
+    clear: both;
+    position: relative;
+}
+
+    #bwl_breaking_news_header_container #header a {
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    #bwl_breaking_news_header_container #header em {
+        font-size: 11px;
+    }
+
+    #bwl_breaking_news_header_container #header span.bnm_ticker_title {
+        display: block;
+        float: left;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 0 21px;
+        color: #FFFFFF;
+        margin: 0 11px 0 0px;
+        background: #3c3c3c;
+    }
+
+body.admin-bar #bwl_breaking_news_header_container {
+    top: 28px /* Make this 32px if MP6 is installed */
+}
+
+
+/*------------------------------ Sticky Footer ---------------------------------*/
+
+/* Make Footer Sticky */
+/* Make Header Sticky */
+
+#bwl_breaking_news_footer_container {
+    background: #F9F9F9;
+    border-top: 3px solid #F9F9F9;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    -webkit-box-shadow: 0px -1px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px -1px 5px rgba(0,0,0,0.3);
+    -o-box-shadow: 0px -1px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px -1px 5px rgba(0,0,0,0.3);
+}
+
+.bwl_breaking_news_footer_ctrl_btn {
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    right: 20px;
+    bottom: 32px;
+    background: #FFFFFF;
+    color: #2C2C2C;
+    display: inline-block;
+    z-index: 2001;
+    cursor: pointer;
+    /*    -webkit-box-shadow: 0px -1px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px -1px 1px rgba(0,0,0,0.1);
+    -o-box-shadow: 0px -1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px -1px 1px rgba(0,0,0,0.1);*/
+    text-align: center;
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-border-radius: 2px 2px 0px 0px;
+    -moz-border-radius: 2px 2px 0px 0px;
+    -o-border-radius: 2px 2px 0px 0px;
+    border-radius: 2px 2px 0px 0px;
+}
+
+
+#bwl_breaking_news_footer_container #footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 32px;
+    clear: both;
+    position: relative;
+}
+
+    #bwl_breaking_news_footer_container #footer .close-btn {
+        position: absolute;
+        top: -28px;
+        right: 11px;
+        vertical-align: middle;
+        background: #F9F9F9;
+        height: 24px;
+        width: 24px;
+        text-align: center;
+        line-height: 24px;
+        cursor: pointer;
+        border-radius: 100%;
+    }
+
+    #bwl_breaking_news_footer_container #footer a {
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+
+    #bwl_breaking_news_footer_container #footer em {
+        font-size: 11px;
+    }
+
+    /*#bwl_breaking_news_header_container #header span.bnm_ticker_title{*/
+    #bwl_breaking_news_footer_container #footer span.bnm_ticker_title {
+        display: block;
+        float: left;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 0 21px;
+        color: #fdfdfd;
+        margin: 0 11px 0 0px;
+        background: #006633;
+    }
+
+
+/*------------------------------ Inline Ticker ---------------------------------*/
+
+#bwl_breaking_news_inline_container {
+    background: #F9F9F9;
+    color: #2C2C2C;
+    width: 100%;
+    /*height:32px;*/
+    z-index: 2000;
+    clear: both;
+}
+
+    #bwl_breaking_news_inline_container #inline {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 32px;
+        clear: both;
+        position: relative;
+    }
+
+        #bwl_breaking_news_inline_container #inline .bwl_breaking_news_ticker_sc {
+            width: 100%;
+        }
+
+            #bwl_breaking_news_inline_container #inline .bwl_breaking_news_ticker_sc li {
+                margin: 0;
+                padding: 0;
+                line-height: 32px;
+            }
+
+        #bwl_breaking_news_inline_container #inline a {
+            text-decoration: none;
+            font-size: 12px;
+            /*white-space: nowrap;*/
+        }
+
+        #bwl_breaking_news_inline_container #inline em {
+            font-size: 11px;
+        }
+
+        #bwl_breaking_news_inline_container #inline span.bnm_ticker_title {
+            display: block;
+            float: left;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 0 21px;
+            color: #FFFFFF;
+            margin: 0 11px 0 0px;
+            background: #3c3c3c;
+        }
+
+/*------------------------------  Widgets ---------------------------------*/
+
+.bwl_breaking_news_ticker_widget_container {
+    position: relative;
+    clear: both;
+    box-sizing: border-box;
+}
+
+    .bwl_breaking_news_ticker_widget_container .ticker_btn_wrapper {
+        position: absolute;
+        /*    right: -5px;*/
+        /*    bottom: 0 !important;*/
+    }
+
+/*------------------------------  Navigation Buttons---------------------------------*/
+
+div.ticker_btn_wrapper {
+    clear: both;
+    position: absolute;
+    /*  top: 5px;*/
+    opacity: 0; /* change it to 0 once task complete */
+    -webkit-transition: 0.3s 0.2s ease-out;
+    -moz-transition: 0.3s 0.2s ease-out;
+    -o-transition: 0.3s 0.2s ease-out;
+    transition: 0.3s 0.2s ease-out;
+    font-weight: normal;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+    div.ticker_btn_wrapper .bwl_prev_btn {
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        margin-right: 5px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 1px;
+        /*  background: transparent;*/
+        /*  color: #2c2c2c !important;*/
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
+        z-index: 2001;
+        opacity: 0.7;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        border-radius: 100%;
+        /*  border: 1px solid #c1c1c1;*/
+        text-align: center;
+    }
+
+        div.ticker_btn_wrapper .bwl_prev_btn i.fa {
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            -ms-transform: rotateX(0deg);
+            -o-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        }
+
+        div.ticker_btn_wrapper .bwl_prev_btn:hover {
+            opacity: 1;
+        }
+
+            div.ticker_btn_wrapper .bwl_prev_btn:hover i.fa {
+                -webkit-transform: rotateX(360deg);
+                -moz-transform: rotateX(360deg);
+                -ms-transform: rotateX(360deg);
+                -o-transform: rotateX(360deg);
+                transform: rotateX(360deg);
+            }
+
+    div.ticker_btn_wrapper .bwl_next_btn {
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 1px;
+        background: transparent !important;
+        color: #2c2c2c !important;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
+        z-index: 2001;
+        opacity: 0.7;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        border-radius: 100%;
+        /*  border: 1px solid #c1c1c1;*/
+        text-align: center;
+    }
+
+        div.ticker_btn_wrapper .bwl_next_btn i.fa {
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            -ms-transform: rotateX(0deg);
+            -o-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        }
+
+        div.ticker_btn_wrapper .bwl_next_btn:hover {
+            opacity: 1;
+            color: inherit;
+        }
+
+            div.ticker_btn_wrapper .bwl_next_btn:hover i.fa {
+                -webkit-transform: rotateX(360deg);
+                -moz-transform: rotateX(360deg);
+                -ms-transform: rotateX(360deg);
+                -o-transform: rotateX(360deg);
+                transform: rotateX(360deg);
+            }
+
+div.bwl_breaking_news_ticker_widget_container div.ticker_btn_wrapper,
+div#bwl_breaking_news_header_container:hover div.ticker_btn_wrapper,
+div#bwl_breaking_news_footer_container:hover div.ticker_btn_wrapper,
+div#bwl_breaking_news_inline_container:hover div.ticker_btn_wrapper {
+    opacity: 1;
+}
+
+
+
+/*------------------------------ Responsive Media Query  ---------------------------------*/
+
+/* Smaller than 1200 (devices and browsers) */
+@media only screen and (max-width: 1199px) {
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    #bwl_breaking_news_header_container #header span.bnm_ticker_title,
+    #bwl_breaking_news_footer_container #footer span.bnm_ticker_title,
+    #bwl_breaking_news_inline_container #inline span.bnm_ticker_title {
+        display: none;
+    }
+
+    .bwl_breaking_news_ticker_sc {
+        margin-left: 11px;
+    }
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+    #bwl_breaking_news_header_container #header span.bnm_ticker_title,
+    #bwl_breaking_news_footer_container #footer span.bnm_ticker_title,
+    #bwl_breaking_news_inline_container #inline span.bnm_ticker_title {
+        display: none;
+    }
+
+    .bwl_breaking_news_ticker_sc {
+        margin-left: 11px;
+    }
+}
